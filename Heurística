@@ -1,0 +1,13 @@
+Descrição da heurística utilizada para se calcular o menor custo até o estado objetivo:
+
+Em busca de se obter o menor caminho poderíamos utilizar a linha reta entre dois pontos do plano, o que garantidamente nos forneceria o menor caminho entre esses pontos. No entanto, por estarmos tratando de um sistema de direções baseado em casa quadradas (1x1), iremo utilizar a métrica da distância de Manhattan. Assim, a função ficará da seguinte forma:
+
+h(n) = sum(i, dif(Xi,Yi))
+
+Onde: sum( i, vet) - retorna a soma dos i primeiros valores de vet.
+      dif(X,Y) - recebe dois pontos X,Y e faz a diferença coordenada a coordenada, retorna um vetor onde cada elemento i é o módulo da diferença entre as coordenadas Xi, Yi.
+
+Como no nosso caso tratamos de pontos no plano, teremos apenas duas coordenadas para cada ponto.      
+      
+      
+A métrica irá nos fornecer o menor número de quadrados que devem ser percorridos para se alcançar o estado objetivo. Ao invés de somarmos simplesmente o número de quadrados, seria interessante que a nossa função pudesse contar também os custos de cada quadrado. É possível? (definir)
