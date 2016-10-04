@@ -1,6 +1,3 @@
-#include<stdio.h>
-#include<stdlib.h>
-#include<math.h>
 double custo(char** matriz,int linha,int coluna);
 
 char** mat_cria (int m, int n);
